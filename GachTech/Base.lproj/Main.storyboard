@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gacha.png" translatesAutoresizingMaskIntoConstraints="NO" id="bf0-1l-YN8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bf0-1l-YN8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -38,7 +38,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="XDJ-aP-4Vh" kind="presentation" identifier="Identifier" modalTransitionStyle="crossDissolve" id="4sD-Oi-97K"/>
+                        <outlet property="haikeiGazou" destination="bf0-1l-YN8" id="u5p-ON-Rvw"/>
+                        <segue destination="XDJ-aP-4Vh" kind="presentation" identifier="result" modalTransitionStyle="crossDissolve" id="4sD-Oi-97K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -72,7 +73,7 @@
                         <viewLayoutGuide key="safeArea" id="qzt-b3-i8n"/>
                     </view>
                     <connections>
-                        <outlet property="haikeigaImageView" destination="CDP-So-DNP" id="R65-08-sTU"/>
+                        <outlet property="haikeiImageView" destination="CDP-So-DNP" id="lcT-oX-lny"/>
                         <outlet property="monsterImageView" destination="cay-4e-mSW" id="HL3-D1-cNc"/>
                     </connections>
                 </viewController>
@@ -81,7 +82,4 @@
             <point key="canvasLocation" x="869.60000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="gacha.png" width="225" height="339"/>
-    </resources>
 </document>

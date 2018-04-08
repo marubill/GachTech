@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var haikeiGazou: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        haikeiGazou.image = UIImage(named: "gacha@2x.png")
         // Do any additional setup after loading the view, typically from a nib.
         
     }
